@@ -1,7 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Parth Jain",
+    author: 'Parth Jain',
+    description: 'Web developer Portfolio - Parth Jain',
+    keywords: 'HTML5,CSS3,JavaScript,React,Gatsby',
+    siteUrl: 'https://www.parthjain.xyz',
+    title: 'Parth Jain',
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-styled-components',
+  ],
 };
