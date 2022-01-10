@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function about() {
+function About() {
   return <Layout>Hellodfsdfddddddddddddddddddddddddddd</Layout>;
 }
 
-export default about;
+export default About;

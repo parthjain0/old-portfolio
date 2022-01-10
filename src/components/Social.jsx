@@ -2,8 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SocialStyled = styled.div`
-  margin: 2rem auto;
+  margin: 8rem auto 4rem;
   display: flex;
+  justify-content: center;
+  div {
+    margin: 0 2rem;
+  }
+  div a i {
+    font-size: 1.5rem;
+  }
+  div a i:hover {
+    color: coral;
+  }
 `;
 
 const Social = () => {
@@ -15,7 +25,7 @@ const Social = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="far fa-envelope"></i>
+          <i className="far fa-envelope"></i>
         </a>
       </div>
       <div>
@@ -24,7 +34,7 @@ const Social = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin"></i>
         </a>
       </div>
       <div>
@@ -33,7 +43,7 @@ const Social = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </a>
       </div>
       <div>
@@ -42,7 +52,7 @@ const Social = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-twitter"></i>
         </a>
       </div>
       <div>
@@ -51,7 +61,7 @@ const Social = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-instagram"></i>
+          <i className="fab fa-instagram"></i>
         </a>
       </div>
     </SocialStyled>

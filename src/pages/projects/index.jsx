@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 
-const index = () => {
+const ProjectsIndex = () => {
   return (
     <Layout>
       <h2>kdkfk</h2>
@@ -9,4 +9,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default ProjectsIndex;

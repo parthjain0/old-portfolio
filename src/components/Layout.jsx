@@ -1,26 +1,31 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import Navbar from './Navbar';
 import Social from './Social';
+import favicon from '../images/favicon.png';
 
 const GlobalStyle = createGlobalStyle`
   *{
-    margin: 0;
-    padding: 0;
-    background-color: #05445E;
     font-family: 'Poppins', sans-serif;
-    color: #f3dfd7;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: white;
   }
-  h1{
-    font-size: 3rem;
+  body{
+    margin: 2rem auto;
+    padding: 0;
+    width: 80%;
+    background: linear-gradient(to right, #000428, #004e92);
   }
-`;
-const Container = styled.div`
-  margin: 2rem auto;
-  width: 80%;
+  h2{
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 850px){
+    body{
+      width: 95%;
+    }
+  }
 `;
 
 const Layout = ({ children }) => {
@@ -43,19 +48,18 @@ const Layout = ({ children }) => {
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content={data.site.siteMetadata.description} />
-        <meta name="author" content={data.site.siteMetadata.author}></meta>
-        <meta name="keywords" content={data.site.siteMetadata.keywords}></meta>
+        <meta name="author" content={data.site.siteMetadata.author} />
+        <meta name="keywords" content={data.site.siteMetadata.keywords} />
+        <link rel="icon" href={favicon} />
         <script
           src="https://kit.fontawesome.com/df12ef64ac.js"
           crossorigin="anonymous"
         ></script>
       </Helmet>
       <GlobalStyle />
-      <Container>
-        <Navbar />
-        <main>{children}</main>
-        <Social />
-      </Container>
+      <Navbar />
+      <main>{children}</main>
+      <Social />
     </React.Fragment>
   );
 };
