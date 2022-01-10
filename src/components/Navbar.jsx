@@ -6,7 +6,7 @@ import CustomLink from './CustomLink';
 const NavbarStyled = styled.div`
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   .logo {
     font-family: 'Satisfy', sans-serif;
     text-decoration: none;
@@ -41,7 +41,6 @@ const Navbar = () => {
       <div className="nav-menu">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/projects">Projects</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
         <a
           href="https://drive.google.com/file/d/1c67siIix-DnkIqfjO7ekG7vqKDoX3J77/view?usp=sharing"

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SocialStyled = styled.div`
-  margin: 8rem auto 4rem;
+  margin: 8rem auto 2rem;
   display: flex;
   justify-content: center;
   div {

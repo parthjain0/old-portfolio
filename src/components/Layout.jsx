@@ -8,7 +8,8 @@ import favicon from '../images/favicon.png';
 
 const GlobalStyle = createGlobalStyle`
   *{
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     font-size: 1.1rem;
     color: white;
   }
@@ -16,7 +17,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 2rem auto;
     padding: 0;
     width: 80%;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #000428, #004e92);
+  }
+  h1{
+    font-size: 2.5rem;
   }
   h2{
     font-size: 2rem;
@@ -25,6 +30,18 @@ const GlobalStyle = createGlobalStyle`
     body{
       width: 95%;
     }
+  }
+  footer{
+    text-align: center;
+  }
+  footer a{
+    text-decoration: none;
+    border-bottom: 2px solid #05445e;
+    transition: all 150ms;
+  }
+  footer a:hover{
+    border-bottom: 2px solid coral;
+    color: coral;
   }
 `;
 
@@ -60,6 +77,16 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <Social />
+      <footer>
+        Website Built with{' '}
+        <a
+          href="https://www.gatsbyjs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gatsby
+        </a>
+      </footer>
     </React.Fragment>
   );
 };

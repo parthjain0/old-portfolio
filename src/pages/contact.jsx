@@ -12,6 +12,7 @@ const ContactStyled = styled.div`
   > div {
     width: 30%;
   }
+
   @media screen and (max-width: 850px) {
     flex-direction: column;
     gap: 5rem;
@@ -20,15 +21,21 @@ const ContactStyled = styled.div`
     }
   }
 
+  div p {
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+
   .form button {
     background: transparent;
     border: 2px solid white;
     padding: 0.5rem 1rem;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border-radius: 5px;
   }
 
   .form button i {
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
 
   .form button:hover {
