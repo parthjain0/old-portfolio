@@ -48,7 +48,7 @@ const ContactStyled = styled.div`
 
   .form-group input,
   .form-group textarea {
-    padding-left: 5px;
+    padding: 5px;
     margin-top: 0.25rem;
     color: black;
     border-radius: 5px;
