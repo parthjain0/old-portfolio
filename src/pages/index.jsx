@@ -7,11 +7,12 @@ const IndexStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10vh;
+  gap: 5rem;
   > div {
     flex: 1;
   }
   .info p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0.25rem 0 1.5rem;
     line-height: 2rem;
   }
@@ -58,7 +59,7 @@ const Index = () => {
               rel="noopener noreferrer"
               download
             >
-              Download CV <i class="fas fa-angle-double-down"></i>
+              Download CV <i className="fas fa-angle-double-down"></i>
             </a>
           </button>
         </div>

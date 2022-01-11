@@ -6,7 +6,6 @@ import CustomLink from './CustomLink';
 const NavbarStyled = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   .logo {
     font-family: 'Satisfy', sans-serif;
     text-decoration: none;
