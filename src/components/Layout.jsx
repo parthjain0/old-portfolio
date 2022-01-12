@@ -8,17 +8,16 @@ import favicon from '../images/favicon.png';
 
 const GlobalStyle = createGlobalStyle`
   *{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
     color: white;
   }
   body{
-    margin: 2rem auto;
-    padding: 0;
-    width: 80%;
-    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #000428, #004e92);
+    margin: 2rem auto;
+    width: 80%;
   }
   h1{
     font-size: 2.5rem;
@@ -26,22 +25,22 @@ const GlobalStyle = createGlobalStyle`
   h2{
     font-size: 2rem;
   }
-  @media screen and (max-width: 850px){
-    body{
-      width: 95%;
-    }
+  h3{
+    font-size: 1.5rem;
   }
   footer{
     text-align: center;
-  }
-  footer a{
-    text-decoration: none;
-    border-bottom: 2px solid #05445e;
-    transition: all 150ms;
-  }
-  footer a:hover{
-    border-bottom: 2px solid coral;
-    color: coral;
+
+    > a{
+      text-decoration: none;
+      border-bottom: 2px solid #05445e;
+      transition: all 150ms;
+
+      &:hover{
+        border-bottom: 2px solid coral;
+        color: coral;
+      }
+    }
   }
 `;
 

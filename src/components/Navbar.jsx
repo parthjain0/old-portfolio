@@ -42,7 +42,7 @@ const Navbar = () => {
         <CustomLink to="/projects">Projects</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
         <a
-          href="https://drive.google.com/file/d/1c67siIix-DnkIqfjO7ekG7vqKDoX3J77/view?usp=sharing"
+          href="https://drive.google.com/file/d/18YBO7hoXZ_11SEqb4lQ0RCH75Ws-K8MH/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
