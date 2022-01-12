@@ -63,7 +63,6 @@ const IndexStyled = styled.div`
 `;
 const Index = ({ data }) => {
   const project = data.allMarkdownRemark.nodes[0];
-  console.log(project);
 
   return (
     <Layout>

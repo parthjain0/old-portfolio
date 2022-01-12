@@ -45,7 +45,6 @@ const ProjectsIndexStyled = styled.div`
 `;
 const ProjectsIndex = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
-  console.log(projects);
 
   return (
     <Layout>
